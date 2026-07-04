@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8080/api";
+const API_BASE = "https://ai-mock-interview-agent-pdzb.onrender.com/api";
 
 const user = JSON.parse(localStorage.getItem("user") || "null");
 if (!user) {
