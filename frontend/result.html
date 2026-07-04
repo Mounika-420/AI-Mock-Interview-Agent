@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result | AI Mock Interview Agent</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <span class="brand">AI Mock Interview Agent</span>
+    <a class="btn btn-secondary" href="dashboard.html">Back to Dashboard</a>
+  </header>
+
+  <main class="result-container">
+    <h2>Your Interview Feedback</h2>
+    <div id="score-badge" class="score-badge">--</div>
+
+    <section>
+      <h3>Strengths</h3>
+      <ul id="strengths-list"></ul>
+    </section>
+
+    <section>
+      <h3>Areas to Improve</h3>
+      <ul id="improvements-list"></ul>
+    </section>
+
+    <section>
+      <h3>Detailed Feedback</h3>
+      <p id="detailed-feedback"></p>
+    </section>
+
+    <p class="error-msg" id="result-error"></p>
+  </main>
+
+  <script src="js/result.js"></script>
+</body>
+</html>

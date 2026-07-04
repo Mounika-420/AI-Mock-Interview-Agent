@@ -1,0 +1,38 @@
+# --- Java / Maven ---
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+mvnw
+mvnw.cmd
+
+# --- Spring Boot / H2 data ---
+backend/data/
+*.db
+*.mv.db
+*.trace.db
+
+# --- IDE ---
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+*.swp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Env / secrets ---
+.env
+*.env.local
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Docker ---
+docker/.env

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | AI Mock Interview Agent</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <span class="brand">AI Mock Interview Agent</span>
+    <span id="welcome-user"></span>
+    <button id="logout-btn" class="btn btn-secondary">Logout</button>
+  </header>
+
+  <main class="dashboard">
+    <section class="new-interview-card">
+      <h2>Start a New Mock Interview</h2>
+      <form id="new-interview-form">
+        <input type="text" id="role" placeholder="Target Role (e.g. Backend Developer)" required>
+        <input type="text" id="techStack" placeholder="Tech Stack (e.g. Java, Spring Boot, MySQL)" required>
+        <select id="difficulty">
+          <option value="Easy">Easy</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+        <input type="number" id="numberOfQuestions" min="1" max="15" value="5">
+        <button type="submit" class="btn btn-primary">Start Interview</button>
+      </form>
+      <p class="error-msg" id="new-interview-error"></p>
+    </section>
+
+    <section>
+      <h2>Your Past Interviews</h2>
+      <div id="interview-list" class="interview-list"></div>
+    </section>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
