@@ -1,4 +1,4 @@
-const API_BASE = "https://ai-mock-interview-agent-pdzb.onrender.com/api";
+const API_BASE = "https://ai-mock-interview-backend-nlrj.onrender.com/api";
 
 const tabLogin = document.getElementById("tab-login");
 const tabRegister = document.getElementById("tab-register");
